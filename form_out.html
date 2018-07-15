@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ふくろうや</title>
+<!--    <link rel="stylesheets" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="css/font-awesome.min.css" rel="stylesheet">-->
+    <link href="css/styles.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico">
+
+</head>
+
+<body id="b-form-out">
+    <div id="wrapper">
+        <header>
+            <h1><a href="index.html"><img id="logo" src="myimg/logo.svg" alt=""></a></h1>
+        </header>
+        <!--<div id="navbar">
+            <ul>
+                <li id="top"><a href="index.html">トップ</a></li>
+                <li id="item"><a href="item.html">商品一覧</a></li>
+                <li id="column"><a href="column.html">コラム</a></li>
+                <li id="access"><a href="access.html">アクセス</a></li>
+                <li id="sitemap"><a href="sitemap.html">サイトマップ</a></li>
+                <li id="contact" class="active"><a href="contact.html">お問い合わせ</a></li>
+            </ul>
+        </div>-->
+        <article class="request">
+            <h1>送信内容をご確認ください</h1>
+
+            <section class="form_output">
+
+                <h3 class="tb_caption">ご記入された内容はこちらです。</h3>
+
+                <table border="1px">
+                    <tr>
+                        <th>お名前</th>
+                        <td id="name_out">&nbsp;</td>
+                    </tr>
+
+                    
+                    
+                    
+                    <tr>
+                        <th>e-mail</th>
+                        <td id="mail_out">&nbsp;</td>
+                    </tr>
+                    
+                    
+                    
+                    
+                    <tr>
+                        <th>商品について</th>
+                        <td id="item_out">&nbsp;</td>
+                    </tr>
+
+                    <tr>
+                        <th>性別</th>
+                        <td id="gender_out">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <th>お住まい</th>
+                        <td id="place_out">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <th>お店を知ったきっかけ</th>
+                        <td id="trigger_out">&nbsp;</td>
+                    </tr>
+
+                    <tr>
+                        <th>お問い合わせ内容</th>
+                        <td id="msg_out">&nbsp;</td>
+                    </tr>
+
+                </table>
+                    <p>この内容で送信いたします。&nbsp;</p>
+                <div class="button">
+                    <input id="btn2" type="button" value="送信OK">
+                    <a href="contact.html"><input type="button" value="戻る"></a>
+                </div>
+
+            </section>
+
+
+        </article>
+        
+        
+        
+        
+
+        <footer>&copy;kdm</footer>
+    </div>
+    <script>
+    var storage_dt = localStorage;
+        
+        var name_dsp = document.getElementById("name_out");
+        name_dsp.textContent = storage_dt.getItem("name_dt");
+        
+        var mail_dsp = document.getElementById("mail_out");
+        mail_dsp.textContent = storage_dt.getItem("mail_dt");
+        
+        var item_dsp = document.getElementById("item_out");
+        item_dsp.textContent = storage_dt.getItem("item_dt");
+        
+        var gender_dsp = document.getElementById("gender_out");
+        gender_dsp.textContent = storage_dt.getItem("gender_dt");
+        
+        var place_dsp = document.getElementById("place_out");
+        place_dsp.textContent = storage_dt.getItem("place_dt");
+        
+        var trigger_dsp = document.getElementById("trigger_out");
+        trigger_dsp.textContent = storage_dt.getItem("trigger_dt");
+        
+        var msg_dsp = document.getElementById("msg_out");
+        msg_dsp.textContent = storage_dt.getItem("msg_dt");
+    
+    </script>
+</body>
+
+
+</html>

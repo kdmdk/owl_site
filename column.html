@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ふくろうや</title>
+    <!--    <link rel="stylesheets" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="css/font-awesome.min.css" rel="stylesheet">-->
+    <link href="css/styles.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico">
+
+</head>
+
+<body id="b-column">
+    <div id="wrapper">
+        <header>
+            <h1><a href="index.html"><img id="logo" src="myimg/logo.svg" alt=""></a></h1>
+        </header>
+        <div id="navbar">
+            <ul>
+                <li id="top"><a href="index.html">トップ</a></li>
+                <li id="item"><a href="item.html">商品一覧</a></li>
+                <li id="column"><a class="active" href="column.html">コラム</a></li>
+                <li id="access"><a href="access.html">アクセス</a></li>
+                <li id="sitemap"><a href="sitemap.html">サイトマップ</a></li>
+                <li id="contact"><a href="contact.html">お問い合わせ</a></li>
+            </ul>
+        </div>
+        <div id="box">
+            <div id="list" class="box-c">
+                <h2>コラム一覧</h2>
+                <ul>
+                    <li><a href="#le01">フクロウ伝説１</a></li>
+                    <li><a href="#le02">フクロウ伝説２</a></li>
+                    <li><a href="#ep01">オーナーのエピソード１</a></li>
+                    <li><a href="#ep02">オーナーのエピソード２</a></li>
+                    <li>……</li>
+                </ul>
+
+
+            </div>
+            <div id="le01" class="box-c">
+                <h2>フクロウ伝説１</h2>
+                <p>　「ふくろうや」では、世界各地で制作されたフクロウを販売しています。日本ではフクロウに「不苦労」とか「福郎」の文字をあてて、幸福の象徴とされてきました。またアイヌ民族は、フクロウを「国を守る神」として崇めていますし、ギリシャ神話では知恵の女神アテナの従者であることから「森の賢者」と称されてきました。</p>
+
+
+
+            </div>
+            <div id="le02" class="box-c">
+                <h2>フクロウ伝説２</h2>
+                <p>　フクロウは守護神としての性格があると同時に不吉、不浄、死の象徴という側面も持ちます。なぜそんな相反する二つの側面を持っているかということはわかりません。一つ言えるのは実際にフクロウを目の当たりにすることでその複雑性の一端が垣間見れるのではないかということです。多面的な性格を知ることでフクロウの作品を見る際にも深みが増すかと思います。</p>
+            </div>
+            <div id="ep01" class="box-c">
+                <h2>オーナーのエピソード１</h2>
+                <p>　「ふくろうや」のオーナーは元マタギで現在パン職人をされている葛西銀次郎氏です。そもそもフクロウをコレクションしたきっかけは当時、関係のあった、とある女性に聞かされた北海道アイヌの伝説にあります。葛西氏が最初の一体を北海道の集落にて購入したのが20年前のことになります。そして、そのコレクションが高じて10年前に「ふくろうや」を開店しました。</p>
+            </div>
+            <div id="ep02" class="box-c">
+                <h2>オーナーのエピソード２</h2>
+                <p>　オーナーの葛西氏は世界各地をよく放浪されています。そこで各地のフクロウの民芸品を集めてはコレクションのひとつとしているのです。彼にとってのフクロウは精神面のパートナーともいえる存在です。ハンドメイドクラフトとして制作されたそのフクロウたちに今日も支えられてパンを焼き続けているのです。</p>
+
+            </div>
+        </div>
+        <div id="toTop">
+            <a href="#wrapper" onclick="scrollToTop();return false">上に戻る</a>
+        </div>
+        <footer>&copy;kdm</footer>
+    </div>
+    <script src="js/scroll-2.js"></script>
+    <!--<script>
+        $(function() {
+            var topBtn = $('#page-top');
+            topBtn.hide();
+            //スクロールが100に達したらボタン表示
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 100) {
+                    topBtn.fadeIn();
+                } else {
+                    topBtn.fadeOut();
+                }
+            });
+            //スクロールしてトップ
+            topBtn.click(function() {
+                $('body,html').animate({
+                    scrollTop: 0
+                }, 500);
+                return false;
+            });
+        });
+    </script>-->
+</body>
+
+
+</html>

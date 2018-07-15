@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ふくろうや</title>
+    <link rel="stylesheets" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico">
+    <script type="text/javascript" src="js/sub-2.js"></script>
+
+</head>
+
+<body id="b-item">
+    <div id="wrapper">
+        <header>
+            <h1><a href="index.html"><img id="logo" src="myimg/logo.svg" alt=""></a></h1>
+        </header>
+        <div id="navbar">
+            <ul>
+                <li id="top"><a href="index.html">トップ</a></li>
+                <li id="item"><a class="active" href="item.html">商品一覧</a></li>
+                <li id="column"><a href="column.html">コラム</a></li>
+                <li id="access"><a href="access.html">アクセス</a></li>
+                <li id="sitemap"><a href="sitemap.html">サイトマップ</a></li>
+                <li id="contact"><a href="contact.html">お問い合わせ</a></li>
+            </ul>
+        </div>
+
+        <div id="contents">
+
+            <div id="container" class="container">
+                <main>
+                    <img src="myimg/owl001.JPG" id="target">
+                    <i class="fa fa-chevron-circle-left" aria-hidden="true" id="prev"></i>
+                    <i class="fa fa-chevron-circle-right" aria-hidden="true" id="next"></i>
+
+
+                </main>
+
+                <nav>
+                    <ul id="thumbnails">
+                    </ul>
+                    <div id="play">
+                        <i class="fa fa-play" aria-hidden="true"></i>再生
+                    </div>
+                    <div id="pause" class="hidden">
+                        <i class="fa fa-pause" aria-hidden="true"></i>停止
+                    </div>
+                </nav>
+
+                <div id="caption">
+                    <div id="owl001" class="hidden">
+                        <h3>ぎょろめ</h3>
+                        <p>900円</p>
+                        <p>サイズ　　小さめ</p>
+                        <p>ぎょろっとしたお目目が可愛い母ふくろう。子ふくろうを渡すまいという気迫が表れている。
+                        </p>
+                    </div>
+                    <div id="owl002" class="hidden">
+                        <h3>メタルのふくろう</h3>
+                        <p>販売価格　2,500円</p>
+                        <p>サイズ　　小さめ</p>
+                        <p>錫で作られたメタリックでカッコイイふくろう。その重厚感は価格にも反映されている。
+                        </p>
+                    </div>
+                    <div id="owl003" class="hidden">
+                        <h3>メタルのふくろう</h3>
+                        <p>販売価格　2,500円</p>
+                        <p>サイズ　　小さめ</p>
+                        <p>錫で作られたメタリックでカッコイイふくろう。その重厚感は価格にも反映されている。
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div id="maintable">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>No.</th>
+                            <th>写真</th>
+                            <th>名前</th>
+                            <th data-type="number">価格（円）</th>
+                        </tr>
+                    </thead>
+                    <!--td><i id="owl"></i></td>-->
+                    <tbody>
+                        <tr>
+                            <td>01</td>
+                            <td><a href="#container" onclick="owl001();"><img class="owl_sm img-responsive" src="myimg/owl001.JPG" alt=""></a></td>
+                            <td>ぎょろめのふくろう</td>
+                            <td class="price">900</td>
+                            <td><button id="q1"><a href="contact.html">お問い合せ</a></button></td>
+                        </tr>
+                        <tr>
+                            <td>02</td>
+                            <td><a href="#container" onclick="owl002();"><img class="owl_sm img-responsive" src="myimg/owl002.JPG" alt=""></a></td>
+                            <td>たわしのふくろう</td>
+                            <td class="price">2500</td>
+                            <td><button id="q2"><a href="contact.html">お問い合せ</a></button></td>
+                        </tr>
+                        <tr>
+                            <td>03</td>
+                            <td><a href="#container" onclick="owl003();"><img class="owl_sm img-responsive" src="myimg/owl003.JPG" alt=""></a></td>
+                            <td>メタルのふくろう</td>
+                            <td class="price">1900</td>
+                            <td><button id="q3"><a href="contact.html">お問い合せ</a></button></td>
+                        </tr>
+                        <tr>
+                            <td>04</td>
+                            <td><a href="#container" onclick="owl004();"><img class="owl_sm img-responsive" src="myimg/owl004.JPG" alt=""></a></td>
+                            <td>より目のふくろう</td>
+                            <td class="price">2200</td>
+                            <td><button id="q4"><a href="contact.html">お問い合せ</a></button></td>
+                        </tr>
+                        <tr>
+                            <td>05</td>
+                            <td><a href="#container" onclick="owl005();"><img class="owl_sm img-responsive" src="myimg/owl005.JPG" alt=""></a></td>
+                            <td>碁石のふくろう</td>
+                            <td class="price">800</td>
+                            <td><button id="q5"><a href="contact.html">お問い合せ</a></button></td>
+                        </tr>
+                        <tr>
+                            <td>06</td>
+                            <td><a href="#container" onclick="owl006();"><img class="owl_sm img-responsive" src="myimg/owl006.JPG" alt=""></a></td>
+                            <td>背中が派手なふくろう</td>
+                            <td class="price">1000</td>
+                            <td><button id="q6"><a href="contact.html">お問い合せ</a></button></td>
+                        </tr>
+                        <tr>
+                            <td>07</td>
+                            <td><a href="#container" onclick="owl007();"><img class="owl_sm img-responsive" src="myimg/owl007.JPG" alt=""></a></td>
+                            <td>オカリナのふくろう</td>
+                            <td class="price">1800</td>
+                            <td><button id="q7"><a href="contact.html">お問い合せ</a></button></td>
+                        </tr>
+                        <tr>
+                            <td>08</td>
+                            <td><a href="#container" onclick="owl008();"><img class="owl_sm img-responsive" src="myimg/owl008.JPG" alt=""></a></td>
+                            <td>七宝焼きのふくろう</td>
+                            <td class="price">750</td>
+                            <td><button id="q8"><a href="contact.html">お問い合せ</a></button></td>
+                        </tr>
+                        <tr>
+                            <td>09</td>
+                            <td><a href="#container" onclick="owl009();"><img class="owl_sm img-responsive" src="myimg/owl009.JPG" alt=""></a></td>
+                            <td>クリスタルのふくろう</td>
+                            <td class="price">2300</td>
+                            <td><button id="q9"><a href="contact.html">お問い合せ</a></button></td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td><a href="#container" onclick="owl010();"><img class="owl_sm img-responsive" src="myimg/owl010.JPG" alt=""></a></td>
+                            <td>陶器の鈴ふくろう</td>
+                            <td class="price">800</td>
+                            <td><button id="q10"><a href="contact.html">お問い合せ</a></button></td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td><a href="#container" onclick="owl011();"><img class="owl_sm img-responsive" src="myimg/owl011.JPG" alt=""></a></td>
+                            <td>つがいのふくろう</td>
+                            <td class="price">1500</td>
+                            <td><button id="q11"><a href="contact.html">お問い合せ</a></button></td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td><a href="#container" onclick="owl012();"><img class="owl_sm img-responsive" src="myimg/owl012.JPG" alt=""></a></td>
+                            <td>インディアンのふくろう</td>
+                            <td class="price">15000</td>
+                            <td><button id="q12"><a href="contact.html">お問い合せ</a></button></td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td><a href="#container" onclick="owl013();"><img class="owl_sm img-responsive" src="myimg/owl013.JPG" alt=""></a></td>
+                            <td>キャラクターのふくろう</td>
+                            <td class="price">500</td>
+                            <td><button id="q13"><a href="contact.html">お問い合せ</a></button></td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td><a href="#container" onclick="owl014();"><img class="owl_sm img-responsive" src="myimg/owl014.JPG" alt=""></a></td>
+                            <td>ペルーのふくろう</td>
+                            <td class="price">2000</td>
+                            <td><button id="q14"><a href="contact.html">お問い合せ</a></button></td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td><a href="#container" onclick="owl015();"><img class="owl_sm img-responsive" src="myimg/owl015.JPG" alt=""></a></td>
+                            <td>ブリキのバネふくろう</td>
+                            <td class="price">1000</td>
+                            <td><button id="q15"><a href="contact.html">お問い合せ</a></button></td>
+                        </tr>
+                        <tr>
+                            <td>16</td>
+                            <td><a href="#container" onclick="owl016();"><img class="owl_sm img-responsive" src="myimg/owl016.JPG" alt=""></a></td>
+                            <td>木曾の民芸品ふくろう</td>
+                            <td class="price">1500</td>
+                            <td><button id="q16"><a href="contact.html">お問い合せ</a></button></td>
+                        </tr>
+                        <tr>
+                            <td>17</td>
+                            <td><a href="#container" onclick="owl017();"><img class="owl_sm img-responsive" src="myimg/owl017.JPG" alt=""></a></td>
+                            <td>花束をもつふくろう</td>
+                            <td class="price">500</td>
+                            <td><button id="q17"><a href="contact.html">お問い合せ</a></button></td>
+                        </tr>
+                        <tr>
+                            <td>18</td>
+                            <td><a href="#container" onclick="owl018();"><img class="owl_sm img-responsive" src="myimg/owl018.JPG" alt=""></a></td>
+                            <td>京都の陶器のふくろう</td>
+                            <td class="price">700</td>
+                            <td><button id="q18"><a href="contact.html">お問い合せ</a></button></td>
+                        </tr>
+                        <tr>
+                            <td>19</td>
+                            <td><a href="#container" onclick="owl019();"><img class="owl_sm img-responsive" src="myimg/owl019.JPG" alt=""></a></td>
+                            <td>見返りふくろう</td>
+                            <td class="price">800</td>
+                            <td><button id="q19"><a href="contact.html">お問い合せ</a></button></td>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td><a href="#container" onclick="owl020();"><img class="owl_sm img-responsive" src="myimg/owl020.JPG" alt=""></a></td>
+                            <td>竹の皮のふくろう</td>
+                            <td class="price">1200</td>
+                            <td><button id="q20"><a href="contact.html">お問い合せ</a></button></td>
+                        </tr>
+                        <tr>
+                            <td>21</td>
+                            <td><a href="#container" onclick="owl021();"><img class="owl_sm img-responsive" src="myimg/owl021.JPG" alt=""></a></td>
+                            <td>和紙で作られたふくろう</td>
+                            <td class="price">950</td>
+                            <td><button id="q21"><a href="contact.html">お問い合せ</a></button></td>
+                        </tr>
+                        <tr>
+                            <td>22</td>
+                            <td><a href="#container" onclick="owl022();"><img class="owl_sm img-responsive" src="myimg/owl022.JPG" alt=""></a></td>
+                            <td>イタリア製のふくろう</td>
+                            <td class="price">950</td>
+                            <td><button id="q22"><a href="contact.html">お問い合せ</a></button></td>
+                        </tr>
+                        <tr>
+                            <td>23</td>
+                            <td><a href="#container" onclick="owl023();"><img class="owl_sm img-responsive" src="myimg/owl023.JPG" alt=""></a></td>
+                            <td>米沢の民芸品ふくろう</td>
+                            <td class="price">1500</td>
+                            <td><button id="q23"><a href="contact.html">お問い合せ</a></button></td>
+                        </tr>
+                        <tr>
+                            <td>24</td>
+                            <td><a href="#container" onclick="owl024();"><img class="owl_sm img-responsive" src="myimg/owl024.JPG" alt=""></a></td>
+                            <td>恵比寿と大黒ふくろう</td>
+                            <td class="price">1000</td>
+                            <td><button id="q24"><a href="contact.html">お問い合せ</a></button></td>
+                        </tr>
+                        <tr>
+                            <td>25</td>
+                            <td><a href="#container" onclick="owl025();"><img class="owl_sm img-responsive" src="myimg/owl025.JPG" alt=""></a></td>
+                            <td>水牛の角ふくろう</td>
+                            <td class="price">2000</td>
+                            <td><button id="q25"><a href="contact.html">お問い合せ</a></button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div id="toTop">
+            <a href="#wrapper" onclick="scrollToTop();return false">上に戻る</a>
+        </div>
+        <footer>&copy;kdm</footer>
+    </div>
+    <script src="js/scroll-2.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+        /*格納エリアに"storage_dt"という名前を設定*/
+        var storage_dt = localStorage;
+
+        /* イベントリスナーの定義 */
+        document.addEventListener("DOMContentLoaded", function() {
+
+            /* ボタン１(id="q1")が押された場合は */
+            document.getElementById("q1").addEventListener("click", function() {
+                /* "item_no"という変数にデーター「番号１：ピューター」をセット */
+                var item_no = "番号１：ぎょろめのふくろう";
+                /* 格納エリア"storage_dt"に、
+                    "item_key"というラベルで、変数"item_no"をセット */
+                storage_dt.setItem("item_key", item_no);
+            }, false);
+
+            document.getElementById("q2").addEventListener("click", function() {
+                var item_no = "番号２：たわしのふくろう";
+                storage_dt.setItem("item_key", item_no);
+            }, false);
+
+            document.getElementById("q3").addEventListener("click", function() {
+                var item_no = "番号３：メタルのふくろう";
+                storage_dt.setItem("item_key", item_no);
+            }, false);
+
+            document.getElementById("q4").addEventListener("click", function() {
+                var item_no = "番号４：より目のふくろう";
+                storage_dt.setItem("item_key", item_no);
+            }, false);
+
+            document.getElementById("q5").addEventListener("click", function() {
+                var item_no = "番号５：碁石のふくろう";
+                storage_dt.setItem("item_key", item_no);
+            }, false);
+
+            document.getElementById("q6").addEventListener("click", function() {
+                var item_no = "番号６：背中が派手なのふくろう";
+                storage_dt.setItem("item_key", item_no);
+            }, false);
+
+            document.getElementById("q7").addEventListener("click", function() {
+                var item_no = "番号７：オカリナのふくろう";
+                storage_dt.setItem("item_key", item_no);
+            }, false);
+
+            document.getElementById("q8").addEventListener("click", function() {
+                var item_no = "番号８：七宝焼きののふくろう";
+                storage_dt.setItem("item_key", item_no);
+            }, false);
+
+            document.getElementById("q9").addEventListener("click", function() {
+                var item_no = "番号９：クリスタルのふくろう";
+                storage_dt.setItem("item_key", item_no);
+            }, false);
+
+            document.getElementById("q10").addEventListener("click", function() {
+                var item_no = "番号10：陶器の鈴のふくろう";
+                storage_dt.setItem("item_key", item_no);
+            }, false);
+
+            document.getElementById("q11").addEventListener("click", function() {
+                var item_no = "番号11：つがいのふくろう";
+                storage_dt.setItem("item_key", item_no);
+            }, false);
+
+            document.getElementById("q12").addEventListener("click", function() {
+                var item_no = "番号12：インディアンのふくろう";
+                storage_dt.setItem("item_key", item_no);
+            }, false);
+
+            document.getElementById("q13").addEventListener("click", function() {
+                var item_no = "番号13：キャラクターのふくろう";
+                storage_dt.setItem("item_key", item_no);
+            }, false);
+
+            document.getElementById("q14").addEventListener("click", function() {
+                var item_no = "番号14：ペルーのふくろう";
+                storage_dt.setItem("item_key", item_no);
+            }, false);
+
+            document.getElementById("q15").addEventListener("click", function() {
+                var item_no = "番号15：ブリキのバネふくろう";
+                storage_dt.setItem("item_key", item_no);
+            }, false);
+
+            document.getElementById("q16").addEventListener("click", function() {
+                var item_no = "番号16：木曾の民芸品ふくろう";
+                storage_dt.setItem("item_key", item_no);
+            }, false);
+
+            document.getElementById("q17").addEventListener("click", function() {
+                var item_no = "番号17：花束を持つのふくろう";
+                storage_dt.setItem("item_key", item_no);
+            }, false);
+
+            document.getElementById("q18").addEventListener("click", function() {
+                var item_no = "番号18：京都の陶器のふくろう";
+                storage_dt.setItem("item_key", item_no);
+            }, false);
+
+            document.getElementById("q19").addEventListener("click", function() {
+                var item_no = "番号19：見返りふくろう";
+                storage_dt.setItem("item_key", item_no);
+            }, false);
+
+            document.getElementById("q20").addEventListener("click", function() {
+                var item_no = "番号20：竹の皮のふくろう";
+                storage_dt.setItem("item_key", item_no);
+            }, false);
+
+            document.getElementById("q21").addEventListener("click", function() {
+                var item_no = "番号21：和紙で作られたふくろう";
+                storage_dt.setItem("item_key", item_no);
+            }, false);
+
+            document.getElementById("q22").addEventListener("click", function() {
+                var item_no = "番号22：イタリア製のふくろう";
+                storage_dt.setItem("item_key", item_no);
+            }, false);
+
+            document.getElementById("q23").addEventListener("click", function() {
+                var item_no = "番号23：米沢の民芸品のふくろう";
+                storage_dt.setItem("item_key", item_no);
+            }, false);
+
+            document.getElementById("q24").addEventListener("click", function() {
+                var item_no = "番号24：恵比寿と大黒ふくろう";
+                storage_dt.setItem("item_key", item_no);
+            }, false);
+
+            document.getElementById("q25").addEventListener("click", function() {
+                var item_no = "番号25：水牛の角ふくろう";
+                storage_dt.setItem("item_key", item_no);
+            }, false);
+
+        }, false);
+    </script>
+</body>
+
+
+</html>

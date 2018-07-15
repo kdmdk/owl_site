@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ふくろうや</title>
+    <!--    <link rel="stylesheets" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="css/font-awesome.min.css" rel="stylesheet">-->
+    <link href="css/styles.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico">
+
+</head>
+
+<body id="b-contact">
+    <div id="wrapper">
+        <header>
+            <h1><a href="index.html"><img id="logo" src="myimg/logo.svg" alt=""></a></h1>
+        </header>
+        <div id="navbar">
+            <ul>
+                <li id="top"><a href="index.html">トップ</a></li>
+                <li id="item"><a href="item.html">商品一覧</a></li>
+                <li id="column"><a href="column.html">コラム</a></li>
+                <li id="access"><a href="access.html">アクセス</a></li>
+                <li id="sitemap"><a href="sitemap.html">サイトマップ</a></li>
+                <li id="contact"><a class="active" href="contact.html">お問い合わせ</a></li>
+            </ul>
+        </div>
+        <!--<form>
+            <div>
+                <label for="name">名前:</label>
+                <input type="text" id="name_in" name="user_name" />
+            </div>
+            <div>
+                <label for="mail">商品について:</label>
+                <input type="text" id="item_in" name="items_name" />
+            </div>
+            <div>
+                <label for="mail">E-mail:</label>
+                <input type="email" id="mail_in" name="user_email" />
+            </div>
+            <div>
+                <label for="msg">お問い合わせ内容:</label>
+                <textarea id="msg_in" name="user_message"></textarea>
+            </div>
+
+            <div class="button">
+                <a href="form_out.html"><input id="btn1" type="button" value="送信"></a>
+                <input type="reset" value="クリア">
+            </div>
+        </form>-->
+        <form>
+            <table id="deta_in">
+                <tr>
+                    <th><label for="name_in">お名前</label></th>
+                    <td><input type="text" name="name" id="name_in"></td>
+                </tr>
+
+                <tr>
+                    <th><label for="mail_in">e-mail</label></th>
+                    <td><input type="email" name="e-mail" id="mail_in"></td>
+                </tr>
+
+                <tr>
+                    <th><label for="item_in">商品について</label></th>
+                    <td><input type="text" name="e-mail" id="item_in"></td>
+                </tr>
+
+                <tr>
+                    <th>性別</th>
+                    <td>
+                        <label><input type="radio" name="gender" value="men">男性</label>
+                        <label><input type="radio" name="gender" value="women">女性</label>
+                        <label><input type="radio" name="gender" value="other">その他</label>
+                    </td>
+                </tr>
+                <tr>
+                    <th>お住まい</th>
+                    <td>
+                        <label><input type="radio" name="place" value="hokkaido">北海道</label>
+                        <label><input type="radio" name="place" value="touhoku">東北</label>
+                        <label><input type="radio" name="place" value="kanto">関東</label>
+                        <label><input type="radio" name="place" value="chubu">中部</label>
+                        <label><input type="radio" name="place" value="kinki">近畿</label>
+                        <label><input type="radio" name="place" value="other">中国</label>
+                        <label><input type="radio" name="place" value="kyusyu">九州</label>
+                        <label><input type="radio" name="place" value="other">その他</label>
+                    </td>
+                </tr>
+                <!--<tr>
+                    <th><label for="jyusyo">お住まい</label></th>
+                    <td>
+                        <select name="place" id="jyusyo">
+                                <option name="place" value="hokk">北海道</option>
+                                <option name="place" value="touh">東北</option>
+                                <option name="place" value="kant">関東</option>
+                                <option name="place" value="tyub">中部</option>
+                                <option name="place" value="kink">近畿</option>
+                                <option name="place" value="tyug">中国</option>
+                                <option name="place" value="kyus">九州</option>
+                            </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>このお店を知ったきっかけ</th>
+
+                    <td>
+                        <label><input type="checkbox" name="kikkake" value="koushikiHP">インターネット</label>
+                        <label><input type="checkbox" name="kikkake" value="tirashi">当店のチラシ</label>
+                        <label><input type="checkbox" name="kikkake" value="shiminHP">他のサイト</label>
+                        <label><input type="checkbox" name="kikkake" value="yuujin">友人・知人から教えて貰った</label>
+                        <label><input type="checkbox" name="kikkake" value="other">その他</label>
+                    </td>
+
+                </tr>
+-->
+                <tr>
+                    <th>このお店を知ったきっかけ</th>
+                    <td>
+                        <label><input type="radio" name="trigger" value="net">インターネット</label>
+                        <label><input type="radio" name="trigger" value="flyer">チラシ</label>
+                        <label><input type="radio" name="trigger" value="friends">友人・知人から</label>
+                        <label><input type="radio" name="trigger" value="other">その他</label>
+                    </td>
+                </tr>
+                <tr>
+
+                    <th><label for="msg">お問い合わせ内容:</label></th>
+                    <td><textarea id="msg_in" name="user_message"></textarea>
+                    </td>
+                </tr>
+
+            </table>
+
+            <div class="button">
+                <a href="form_out.html"><input id="btn1" type="button" value="送信"></a>
+                <input type="reset" value="クリア">
+            </div>
+
+            <!--<div id="okuru">
+                <button type="submit">送信</button>
+                <button type="reset">リセット</button>
+            </div>-->
+        </form>
+        <div id="toTop">
+            <a href="#wrapper" onclick="scrollToTop();return false">上に戻る</a>
+        </div>
+        <footer>&copy;kdm</footer>
+    </div>
+    <script src="js/scroll-2.js"></script>
+    <script>
+        /*格納エリアに"storage_dt"という名前を設定*/
+        var storage_dt = localStorage;
+
+        //document.getElementById('bsp').value=storage_dt;
+        /*id="dsp"という表示データーに、"item_dsp"という変数名を設定
+             59行目　現在は何も設定されていません */
+        var item_dsp = document.getElementById("item_in");
+        /* "item_dsp"という変数名に、"storage_dt"に登録されている
+                "itme_key"というラベルのついたデーターをセット */
+        item_dsp.value = storage_dt.getItem("item_key");
+
+
+
+        /** ラジオボタン選択関数 **/
+        var getRadioValue = function(option_x) {
+            var result = "";
+            for (var i = 0, len = option_x.length; i < len; i++) {
+                var option_y = option_x.item(i);
+                if (option_y.checked) {
+                    result = option_y.value;
+                    break;
+                }
+            }
+            return result;
+        };
+
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById("btn1").addEventListener("click", function() {
+                /** 名前の処理 **/
+                var name_y = document.getElementById("name_in");
+                var name_z = name_y.value;
+                var name_dsp = document.getElementById("name_out");
+                /*name_dsp.textContent = name_z + " 様";*/
+                storage_dt.setItem("name_dt", name_z);
+
+                
+                /** ラジオボタンの処理１・メニュー **/
+                var date_y = document.getElementById("mail_in");
+                var date_z = date_y.value;
+                var date_dsp = document.getElementById("mail_out");
+                /*date_dsp.textContent = date_z;*/
+                storage_dt.setItem("mail_dt", date_z);
+                
+                
+                /** 日付の処理 **/
+                var date_y = document.getElementById("item_in");
+                var date_z = date_y.value;
+                var date_dsp = document.getElementById("item_out");
+                /*date_dsp.textContent = date_z;*/
+                storage_dt.setItem("item_dt", date_z);
+
+                
+                /** ラジオボタンの処理１・メニュー **/
+                var option_x = document.getElementsByName("gender");
+                var gender_dsp = document.getElementById("gender_out");
+                /*menu_dsp.textContent = getRadioValue(option_x);*/
+                storage_dt.setItem("gender_dt",  getRadioValue(option_x));
+                
+               
+
+                /** ラジオボタンの処理１・メニュー **/
+                var option_x = document.getElementsByName("place");
+                var place_dsp = document.getElementById("place_out");
+                /*menu_dsp.textContent = getRadioValue(option_x);*/
+                storage_dt.setItem("place_dt",  getRadioValue(option_x));
+                
+
+                /** ラジオボタンの処理１・メニュー **/
+                var option_x = document.getElementsByName("trigger");
+                var trigger_dsp = document.getElementById("trigger_out");
+                /*menu_dsp.textContent = getRadioValue(option_x);*/
+                storage_dt.setItem("trigger_dt",  getRadioValue(option_x));
+                
+
+                
+                /** ラジオボタンの処理２・時間帯 **/
+                var date_y = document.getElementById("msg_in");
+                var date_z = date_y.value;
+                var date_dsp = document.getElementById("msg_out");
+                /*date_dsp.textContent = date_z;*/
+                storage_dt.setItem("msg_dt", date_z);
+
+            }, false);
+        }, false);
+
+    </script>
+</body>
+
+
+</html>

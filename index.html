@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ふくろうや</title>
+    <link rel="stylesheets" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/vegas.min.css">
+    <link href="https://fonts.googleapis.com/earlyaccess/sawarabimincho.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico">
+
+</head>
+
+<body>
+    <div id="wrapper" class="grid_container">
+        <header class="grid_header">
+            <h1><a href="index.html"><img id="logo" src="myimg/logo.svg" alt=""></a></h1>
+        </header>
+        <div class="grid_nav" id="navbar">
+            <ul>
+                <li id="top"><a class="active" href="index.html">トップ</a></li>
+                <li id="item"><a href="item.html">商品一覧</a></li>
+                <li id="column"><a href="column.html">コラム</a></li>
+                <li id="access"><a href="access.html">アクセス</a></li>
+                <li id="sitemap"><a href="sitemap.html">サイトマップ</a></li>
+                <li id="contact"><a href="contact.html">お問い合わせ</a></li>
+            </ul>
+        </div>
+
+        <article>
+            <p id="intro">当店はお客様と<br>ふくろうとの出会いを<br>大切にしています。<br><span id="sub">ですので、来て、見て、さわって<br>選んでいただきたいです。</span></p>
+        </article>
+            <div class="news">
+                <p id="info">更新情報</p>
+                <dl>
+                    <dt>2018/2/28</dt>
+                    <dd>十周年記念イベント開催中！</dd>
+                    <dt>2017/2/28</dt>
+                    <dd>サイトOPEN！</dd>
+                    <dt>2016/2/28</dt>
+                    <dd>facebook始めました</dd>
+                    <dt>2015/2/28</dt>
+                    <dd>またぎやめました</dd>
+                    <dt>2018/2/28</dt>
+                    <dd>十周年記念イベント開催中！</dd>
+                    <dt>2017/2/28</dt>
+                    <dd>サイトOPEN！</dd>
+                    <dt>2016/2/28</dt>
+                    <dd>facebook始めました</dd>
+                    <dt>2015/2/28</dt>
+                    <dd>またぎやめました</dd>
+                    <dt>2018/2/28</dt>
+                    <dd>十周年記念イベント開催中！</dd>
+                    <dt>2017/2/28</dt>
+                    <dd>サイトOPEN！</dd>
+                    <dt>2016/2/28</dt>
+                    <dd>facebook始めました</dd>
+                    <dt>2015/2/28</dt>
+                    <dd>またぎやめました</dd>
+                </dl>
+            </div>
+            <div id="face" class="face"><img src="myimg/facebook.jpg" height="100%"></div>
+            <div id="banner" class="banner"><img src="myimg/banner250.gif"><br><img src="myimg/banner_1.gif"><img src="myimg/banner_s.gif"></div>
+        <!--<p id="page-top"><a href="#wrapper">PAGE TOP</a></p>-->
+        <div id="toTop">
+            <a href="#wrapper" onclick="scrollToTop();return false">上に戻る</a>
+        </div>
+        <footer>&copy;kdm</footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/vegas.min.js"></script>
+    <script src="js/scroll-2.js"></script>
+    <script>
+        $(function() {
+            $('body').vegas({
+                slides: [{
+                        src: 'myimg/owl001.jpg'
+                    },
+                    {
+                        src: 'myimg/owl002.jpg'
+                    },
+                    {
+                        src: 'myimg/owl003.jpg'
+                    },
+                    {
+                        src: 'myimg/owl004.jpg'
+                    },
+                    {
+                        src: 'myimg/owl005.jpg'
+                    },
+                    {
+                        src: 'myimg/owl006.jpg'
+                    },
+                    {
+                        src: 'myimg/owl007.jpg'
+                    },
+                    {
+                        src: 'myimg/owl008.jpg'
+                    },
+                    {
+                        src: 'myimg/owl009.jpg'
+                    },
+                    {
+                        src: 'myimg/owl010.jpg'
+                    },
+                    {
+                        src: 'myimg/owl011.jpg'
+                    },
+                    {
+                        src: 'myimg/owl012.jpg'
+                    },
+                    {
+                        src: 'myimg/owl013.jpg'
+                    },
+                    {
+                        src: 'myimg/owl014.jpg'
+                    },
+                    {
+                        src: 'myimg/owl015.jpg'
+                    },
+                    {
+                        src: 'myimg/owl016.jpg'
+                    },
+                    {
+                        src: 'myimg/owl017.jpg'
+                    },
+                    {
+                        src: 'myimg/owl018.jpg'
+                    },
+                    {
+                        src: 'myimg/owl019.jpg'
+                    },
+                    {
+                        src: 'myimg/owl020.jpg'
+                    },
+                    {
+                        src: 'myimg/owl021.jpg'
+                    },
+                    {
+                        src: 'myimg/owl022.jpg'
+                    },
+                    {
+                        src: 'myimg/owl023.jpg'
+                    },
+                    {
+                        src: 'myimg/owl024.jpg'
+                    },
+                    {
+                        src: 'myimg/owl025.jpg'
+                    }
+                ],
+                delay: 7000,
+                timer: false,
+                overlay: 'overlays/07.png',
+                animation: 'kenburnsLeft'
+            });
+        });
+
+    </script>
+
+</body>
+
+
+</html>
