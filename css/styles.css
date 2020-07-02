@@ -305,6 +305,10 @@ a {
     color: black;
 }
 
+a:visited {
+    color: #202527;
+}
+
 
 .owl_bg {
     max-width: 300px;
@@ -494,7 +498,7 @@ article {
     .grid_container {
         display: grid; //background-color:violet;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 250px 160px 500px 350px; 30px;
+        grid-template-rows: 250px 160px 500px 400px 30px;
     }
 
     .grid_header {
@@ -534,7 +538,6 @@ article {
         margin-left: 10%;
         border: 2px solid #000;
         overflow-y: scroll;
-        
     }
 
     .face {
@@ -544,8 +547,7 @@ article {
     }
 
     .face img {
-        max-width: 100%;
-        max-height: 100%;
+        max-width: 300px;
     }
 
     .banner {
@@ -561,7 +563,7 @@ article {
 }
 
 dl {
-    margin: 20px;
+    margin: 35px;
     padding: 0;
     line-height: 1.8;
     width: 50%;
@@ -578,7 +580,7 @@ dl dd {
     margin: 0 0 10px;
     padding: 0 5px 10px 8em;
     border-bottom: 1px dotted #fff;
-    min-width: 160%;
+    width: 180%;
 }
 
 #info {
@@ -666,6 +668,29 @@ header {
     padding: 0;
 }
 
+@media screen and (min-width: 768px) {
+
+    #mapadd {
+        display: grid;
+        margin: 5% 0;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 250px 80px 150px 30px;
+    }
+    #address {
+        text-align: left;
+        max-width: 90%;
+        height: 20px;
+        font-size: 80%;
+        position: absolute;
+        background-color: rgba(10, 10, 10, 0.5);
+        margin-top: -300px;
+        color: #fff;
+        padding: 5px 0 5px 0;
+        margin-left: 5%;
+        padding: 0;
+    }
+}
+
 #add img {
     max-width: 90%;
     height: auto;
@@ -673,10 +698,6 @@ header {
     margin-left: 5%;
 }
 
-#mapadd #map {
-    width: 90%;
-    height:385px;
-}
 
 #address p {
     width: 90%;
@@ -685,42 +706,27 @@ header {
 
 @media screen and (min-width: 768px) {
 
-    #mapadd {
-        display: grid;
-        margin: 5% 0;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto;
-    }
-
-    #mapadd #map {
-        width: 95%;
-        margin: auto;
-    }
-
-
-    #add {
-        height: 100%;
-    }
     #add img {
-        width: 100%;
-        height: auto;
+        max-width: 600px;
+        height: 450px;
         text-align: center;
         margin-left: 5%;
     }
     #address p {
-        //width: 400px;
-        width: 100%;
+        width: 400px;
         line-height: normal;
     }
     #address {
         text-align: left;
-
+        max-width: 600px;
+        height: auto;
         position: absolute;
         background-color: rgba(10, 10, 10, 0.5);
-        margin-top: -250px;
-        color: #fff; //padding: 5px 0 5px 0;
-        //margin-left: 5%;
-        font-size: 80%;
+        margin-top: -300px;
+        color: #fff;
+        padding: 5px 0 5px 0;
+        margin-left: 5%;
+        font-size: 100%;
     }
 
 }
@@ -732,10 +738,6 @@ header {
     padding: 2%;
     border: 2px solid #000;
     border-radius: 10px/10px;
-}
-
-#b-column .box-c h2 {
-    padding-bottom: 5px;
 }
 
 @media screen and (min-width: 768px) {
@@ -898,20 +900,16 @@ footer {
     list-style: none;
 }
 
-#b-sitemap article ul li {
-    padding: 10px;
-}
 
 #b-sitemap article section {
     margin: 10px;
-    padding: 10px;
 }
 
-#b-sitemap article {
-    background-color: #B59D9A;
+#b-sitemap article{
+    background-color: #eee;
 }
 
-#b-sitemap article section {
+article section {
     border: 2px solid brown;
     border-radius: 10px/10px;
     background-color: burlywood;
@@ -967,14 +965,11 @@ article section a:visited {
     background-color: cadetblue;
     color: crimson;
 }
-
-#toTop {
-    position: fixed;
-    bottom: 18px;
-    right: 18px;
-    opacity: 0.8;
+#toTop{
+    position:fixed;
+    bottom:18px;
+    right:18px;
 }
-
 #toTop a {
     background: #666;
     text-decoration: none;
@@ -984,10 +979,4 @@ article section a:visited {
     text-align: center;
     display: block;
     border-radius: 5px;
-}
-a:visited {
-    color: #202527;
-}
-#b-column #list a:visited{
-    color: gray;
 }

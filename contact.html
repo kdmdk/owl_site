@@ -75,30 +75,18 @@
                         <label><input type="radio" name="gender" value="other">その他</label>
                     </td>
                 </tr>
+
                 <tr>
-                    <th>お住まい</th>
-                    <td>
-                        <label><input type="radio" name="place" value="hokkaido">北海道</label>
-                        <label><input type="radio" name="place" value="touhoku">東北</label>
-                        <label><input type="radio" name="place" value="kanto">関東</label>
-                        <label><input type="radio" name="place" value="chubu">中部</label>
-                        <label><input type="radio" name="place" value="kinki">近畿</label>
-                        <label><input type="radio" name="place" value="other">中国</label>
-                        <label><input type="radio" name="place" value="kyusyu">九州</label>
-                        <label><input type="radio" name="place" value="other">その他</label>
-                    </td>
-                </tr>
-                <!--<tr>
                     <th><label for="jyusyo">お住まい</label></th>
                     <td>
-                        <select name="place" id="jyusyo">
-                                <option name="place" value="hokk">北海道</option>
-                                <option name="place" value="touh">東北</option>
-                                <option name="place" value="kant">関東</option>
-                                <option name="place" value="tyub">中部</option>
-                                <option name="place" value="kink">近畿</option>
-                                <option name="place" value="tyug">中国</option>
-                                <option name="place" value="kyus">九州</option>
+                        <select name="jyusyo" id="jyusyo">
+                                <option value="hokk">北海道</option>
+                                <option value="touh">東北</option>
+                                <option value="kant">関東</option>
+                                <option value="tyub">中部</option>
+                                <option value="kink">近畿</option>
+                                <option value="tyug">中国</option>
+                                <option value="kyus">九州</option>
                             </select>
                     </td>
                 </tr>
@@ -115,16 +103,7 @@
                     </td>
 
                 </tr>
--->
-                <tr>
-                    <th>このお店を知ったきっかけ</th>
-                    <td>
-                        <label><input type="radio" name="trigger" value="net">インターネット</label>
-                        <label><input type="radio" name="trigger" value="flyer">チラシ</label>
-                        <label><input type="radio" name="trigger" value="friends">友人・知人から</label>
-                        <label><input type="radio" name="trigger" value="other">その他</label>
-                    </td>
-                </tr>
+
                 <tr>
 
                     <th><label for="msg">お問い合わせ内容:</label></th>
@@ -186,15 +165,6 @@
                 /*name_dsp.textContent = name_z + " 様";*/
                 storage_dt.setItem("name_dt", name_z);
 
-                
-                /** ラジオボタンの処理１・メニュー **/
-                var date_y = document.getElementById("mail_in");
-                var date_z = date_y.value;
-                var date_dsp = document.getElementById("mail_out");
-                /*date_dsp.textContent = date_z;*/
-                storage_dt.setItem("mail_dt", date_z);
-                
-                
                 /** 日付の処理 **/
                 var date_y = document.getElementById("item_in");
                 var date_z = date_y.value;
@@ -202,30 +172,13 @@
                 /*date_dsp.textContent = date_z;*/
                 storage_dt.setItem("item_dt", date_z);
 
-                
                 /** ラジオボタンの処理１・メニュー **/
-                var option_x = document.getElementsByName("gender");
-                var gender_dsp = document.getElementById("gender_out");
-                /*menu_dsp.textContent = getRadioValue(option_x);*/
-                storage_dt.setItem("gender_dt",  getRadioValue(option_x));
-                
-               
+                var date_y = document.getElementById("mail_in");
+                var date_z = date_y.value;
+                var date_dsp = document.getElementById("mail_out");
+                /*date_dsp.textContent = date_z;*/
+                storage_dt.setItem("mail_dt", date_z);
 
-                /** ラジオボタンの処理１・メニュー **/
-                var option_x = document.getElementsByName("place");
-                var place_dsp = document.getElementById("place_out");
-                /*menu_dsp.textContent = getRadioValue(option_x);*/
-                storage_dt.setItem("place_dt",  getRadioValue(option_x));
-                
-
-                /** ラジオボタンの処理１・メニュー **/
-                var option_x = document.getElementsByName("trigger");
-                var trigger_dsp = document.getElementById("trigger_out");
-                /*menu_dsp.textContent = getRadioValue(option_x);*/
-                storage_dt.setItem("trigger_dt",  getRadioValue(option_x));
-                
-
-                
                 /** ラジオボタンの処理２・時間帯 **/
                 var date_y = document.getElementById("msg_in");
                 var date_z = date_y.value;

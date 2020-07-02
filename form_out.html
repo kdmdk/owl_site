@@ -40,33 +40,14 @@
                         <td id="name_out">&nbsp;</td>
                     </tr>
 
-                    
-                    
-                    
-                    <tr>
-                        <th>e-mail</th>
-                        <td id="mail_out">&nbsp;</td>
-                    </tr>
-                    
-                    
-                    
-                    
                     <tr>
                         <th>商品について</th>
                         <td id="item_out">&nbsp;</td>
                     </tr>
 
                     <tr>
-                        <th>性別</th>
-                        <td id="gender_out">&nbsp;</td>
-                    </tr>
-                    <tr>
-                        <th>お住まい</th>
-                        <td id="place_out">&nbsp;</td>
-                    </tr>
-                    <tr>
-                        <th>お店を知ったきっかけ</th>
-                        <td id="trigger_out">&nbsp;</td>
+                        <th>e-mail</th>
+                        <td id="mail_out">&nbsp;</td>
                     </tr>
 
                     <tr>
@@ -98,23 +79,14 @@
         var name_dsp = document.getElementById("name_out");
         name_dsp.textContent = storage_dt.getItem("name_dt");
         
-        var mail_dsp = document.getElementById("mail_out");
-        mail_dsp.textContent = storage_dt.getItem("mail_dt");
+        var date_dsp = document.getElementById("item_out");
+        date_dsp.textContent = storage_dt.getItem("item_dt");
         
-        var item_dsp = document.getElementById("item_out");
-        item_dsp.textContent = storage_dt.getItem("item_dt");
+        var menu_dsp = document.getElementById("mail_out");
+        menu_dsp.textContent = storage_dt.getItem("mail_dt");
         
-        var gender_dsp = document.getElementById("gender_out");
-        gender_dsp.textContent = storage_dt.getItem("gender_dt");
-        
-        var place_dsp = document.getElementById("place_out");
-        place_dsp.textContent = storage_dt.getItem("place_dt");
-        
-        var trigger_dsp = document.getElementById("trigger_out");
-        trigger_dsp.textContent = storage_dt.getItem("trigger_dt");
-        
-        var msg_dsp = document.getElementById("msg_out");
-        msg_dsp.textContent = storage_dt.getItem("msg_dt");
+        var time_dsp = document.getElementById("msg_out");
+        time_dsp.textContent = storage_dt.getItem("msg_dt");
     
     </script>
 </body>
